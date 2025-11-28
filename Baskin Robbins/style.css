@@ -1,0 +1,309 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.5;
+      background-color: #fff;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    header img {
+      width: 250px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: rgb(94%,31%,59%);
+    }
+
+    header button {
+      background-color: rgb(94%,31%,59%);
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    header button:hover {
+      transform: scale(1.05);
+    }
+
+    /* Banner */
+    .banner {
+      margin-top: 100px;
+      width: 100%;
+    }
+
+    .banner img {
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+    }
+
+    /* Section Titles */
+    section h1 {
+      color: rgb(94%,31%,60%);
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+
+    section h1 span {
+      color: #442222;
+    }
+
+    /* Product / Cards Grid */
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 300px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+      transition: transform 0.3s;
+    }
+
+    .card h3 {
+      padding: 15px;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #442222;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+    .card .order-btn {
+      display: block;
+      margin: 10px auto 20px auto;
+      padding: 10px 20px;
+      background-color: rgb(94%,31%,59%);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+ 
+    .card .order-btn:hover {
+      transform: scale(1.05);
+      background-color: rgb(80%,25%,50%);
+    }
+
+
+    /* About Section */
+    .about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: 20px auto;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .about-images {
+      max-width: 100;
+      height: auto;
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    .about-images img {
+      flex: 1 1 300px;
+      max-width: 400px;
+      border-radius: 15px;
+      transition: transform 0.3s;
+    }
+
+    .about-images img:hover {
+      transform: scale(1.05);
+    }
+    .about .order-btn {
+      display: inline-block;
+      width: auto;
+      padding: 10px 20px;
+      background-color: rgb(94%,31%,59%);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+ 
+    .about .order-btn:hover {
+      transform: scale(1.05);
+      background-color: rgb(80%,25%,50%);
+    }
+    .about h2 {
+      color: #ff69b4; 
+    }
+
+  
+
+
+    /* Social Section */
+    .social-section {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .social-section h1 {
+      margin-bottom: 30px;
+    }
+
+    .social-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-grid img {
+      width: 300px;
+      border-radius: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .social-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    /* Footer */
+    footer {
+      background-image: url('images/Footer_BG_New.jpg');
+      background-size: cover;      
+      background-position: center; 
+      background-repeat: no-repeat;
+      padding: 50px 10%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    footer div {
+      flex: 1 1 200px;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 10px;
+      color: #000;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: rgb(94%,31%,59%);
+    }
+
+    footer h6 {
+      margin-bottom: 15px;
+      font-size: 1rem;
+      color: #442222;
+    }
+
+    footer input[type="email"] {
+      width: 70%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    footer button {
+      padding: 8px 12px;
+      background-color: rgb(94%,31%,59%);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    footer button:hover {
+      transform: scale(1.05);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      .card-grid, .about-images, .social-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
